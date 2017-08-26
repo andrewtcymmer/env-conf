@@ -1,0 +1,6 @@
+[submodule "tmux/gitbar"]
+	path = tmux/gitbar
+	url = https://github.com/aurelien-rainone/tmux-gitbar.git
+[submodule "vim/bundle/Vundle.vim"]
+	path = vim/bundle/Vundle.vim
+	url = https://github.com/aurelien-rainone/tmux-gitbar.git

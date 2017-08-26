@@ -1,0 +1,2 @@
+# Ignore subdirectories of bundle/ since that's where Vundle installs all its plugins.
+vim/bundle/
