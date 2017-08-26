@@ -1,8 +1,8 @@
 # env-conf
-Just a little repository to contain my development environment configuration, and an install script to set it up.
+Just a little repository to contain my development environment configuration.  
 
 # Installing #
-Clone the repository anywhere on your machine:  
+Clone the repository to `$HOME/env-conf`:  
 
     git clone --recursive https://github.com/andrewtcymmer/env-conf ~/env-conf
 
