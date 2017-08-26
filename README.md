@@ -1,5 +1,5 @@
-# vim-conf
-Just a little repository to contain my vim configuration, and an install script to set it up.
+# env-conf
+Just a little repository to contain my development environment configuration, and an install script to set it up.
 
 # Installing #
 Clone the repository anywhere on your machine:  
