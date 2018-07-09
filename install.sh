@@ -16,4 +16,22 @@ create_symlink ~/.vim/colors/solarized.vim `pwd`/vim/vim-colors-solarized/colors
 create_symlink ~/.vimrc `pwd`/vim/_vimrc
 # vim +PluginInstall +qall
 
+if [ ! -d ~/.ssh ]
+then
+    mkdir ~/.ssh
+fi
+if [ -e ~/.ssh/config ]
+then
+    if grep "host github.com" ~/.ssh/config
+    then
+        echo "~/.ssh/config already contains an entry for GitHub. Skipping..."
+    else
+        echo "Adding a GitHub entry to ~/.ssh/config ..."
+        cat ssh/config >> ~/.ssh/config
+    fi
+else
+    echo "Did not find a ~/.ssh/config file, copying from this package..."
+    cp ssh/config ~/.ssh/config
+fi
+
 echo "Install script finished."

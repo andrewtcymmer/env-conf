@@ -1,0 +1,5 @@
+### Public GitHub
+host github.com
+    HostName github.com
+    IdentityFile ~/.ssh/id_rsa.github
+    User git 
