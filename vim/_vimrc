@@ -45,6 +45,8 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 set t_Co=256
+colorscheme solarized
+set background=dark
 set expandtab
 set shiftwidth=4
 set tabstop=4
