@@ -1,2 +1,4 @@
 # Ignore subdirectories of bundle/ since that's where Vundle installs all its plugins.
 vim/bundle/
+# Exclude this symlink which is made by the installer to prevent Git from thinking this is an untracked file.
+vim/colors/solarized.vim

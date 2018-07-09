@@ -12,6 +12,7 @@ function create_symlink {
 
 create_symlink ~/.tmux.conf `pwd`/tmux/tmux.conf
 create_symlink ~/.vim `pwd`/vim
+create_symlink ~/.vim/colors/solarized.vim `pwd`/vim/vim-colors-solarized/colors/solarized.vim
 create_symlink ~/.vimrc `pwd`/vim/_vimrc
 # vim +PluginInstall +qall
 
