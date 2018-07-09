@@ -11,6 +11,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'https://github.com/leafgarland/typescript-vim.git'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -53,3 +55,4 @@ set tabstop=4
 syntax on
 set number
 
+let g:jx_ext_required=0
