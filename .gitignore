@@ -1,5 +1,7 @@
-# Ignore subdirectories of bundle/ since that's where Vundle installs all its plugins.
-vim/bundle/
-vim/.netrwhist
-# Exclude this symlink which is made by the installer to prevent Git from thinking this is an untracked file.
-vim/colors/solarized.vim
+# ignore
+!.config/i3
+!.config/zsh
+!.config/nvim
+!~.config/compton
+!~.config/rofi
+
