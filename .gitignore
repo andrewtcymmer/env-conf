@@ -1,7 +1,9 @@
-# ignore
+# ignore everything under .config except the files/folders opted in.
 !.config/i3
 !.config/zsh
 !.config/nvim
 !~.config/compton
 !~.config/rofi
 
+# ignore directories created by unit tests.
+mock-home
