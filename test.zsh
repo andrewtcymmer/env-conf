@@ -53,6 +53,17 @@ function assertSymlink() {
 	fi
 }
 
+function assertFile() {
+	local msg=$1; shift
+	local expected=$1; shift
+	if [ -f $expected ]
+	then
+		echo "[Passed] $msg"
+	else
+		echo "[Failed] $msg"
+	fi
+}
+
 # Step 2. 
 # Include the functions under test by source-ing them in.
 
@@ -79,6 +90,15 @@ assertSymlink "Making symlink to .zshrc results in a new symlink" $TARGETHOMEDIR
 assertEquals "Making symlink to .zshrc has correct return code" 0 $returncode
 symlink_to_repo .zshrc
 assertEquals "Re-making symlink to .zshrc has correct return code" 0 $?
+
+# Test: does the symlink creation make a backup of an existing file before overwriting it with a symlink?
+
+clear_test_workspace
+create_test_workspace
+
+touch $TARGETHOMEDIR/.zshrc
+symlink_to_repo .zshrc 
+assertFile "Making symlink to .zshrc when a file already exists creates a backup" $TARGETHOMEDIR/.zshrc.bak
 
 # TODO: define the next test
 
