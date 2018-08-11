@@ -1,5 +1,5 @@
-# Ignore subdirectories of bundle/ since that's where Vundle installs all its plugins.
-vim/bundle/
-vim/.netrwhist
-# Exclude this symlink which is made by the installer to prevent Git from thinking this is an untracked file.
-vim/colors/solarized.vim
+# Prevent accidental additions to the ssh directory
+content/.ssh/**/*
+
+# ignore directories created by unit tests.
+mock-home
