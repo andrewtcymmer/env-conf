@@ -15,7 +15,8 @@ function symlink_to_repo {
 	# make a backup if the file exists
 	if [ -f $TARGETHOMEDIR/$pathfragment ]; then mv $TARGETHOMEDIR/$pathfragment $TARGETHOMEDIR/$pathfragment.bak; fi
 	# make the symlink
-	ln -s $REPODIR/$pathfragment $TARGETHOMEDIR/$pathfragment
+	echo "Creating symlink to $pathfragment ..."
+	ln -s $REPOCFGDIR/$pathfragment $TARGETHOMEDIR/$pathfragment
 	return 0
 }
 

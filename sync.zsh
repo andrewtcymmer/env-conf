@@ -13,11 +13,11 @@ source funcs.zsh
 #    exit 1
 #fi
 
-TARGETHOMEDIR=$home
-REPODIR=.
+TARGETHOMEDIR=~
+REPOCFGDIR=`pwd`/content
 
-# TODO: scan entire repodir for files, recurse into folders, and symlink all the things.
+for file in `find $REPOCFGDIR -type f -name "*"`; do
+	symlink_to_repo ${file:$(($#REPOCFGDIR+1))}
+done
 
-symlink_to_repo .zshrc
-
-echo "Install script finished."
+echo "All files up-to-date."

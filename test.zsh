@@ -74,7 +74,7 @@ source funcs.zsh
 # Mock any global variables needed for the tests or functions to run.
 
 TARGETHOMEDIR=`pwd`/mock-home
-REPODIR=`pwd`
+REPOCFGDIR=`pwd`/content
 
 # Step 4.
 # Write your test scenarios.
@@ -84,11 +84,11 @@ REPODIR=`pwd`
 clear_test_workspace
 create_test_workspace
 
-symlink_to_repo .zshrc
+symlink_to_repo .zshrc > /dev/null 2>&1
 returncode=$?
 assertSymlink "Making symlink to .zshrc results in a new symlink" $TARGETHOMEDIR/.zshrc
 assertEquals "Making symlink to .zshrc has correct return code" 0 $returncode
-symlink_to_repo .zshrc
+symlink_to_repo .zshrc > /dev/null 2>&1
 assertEquals "Re-making symlink to .zshrc has correct return code" 0 $?
 
 # Test: does the symlink creation make a backup of an existing file before overwriting it with a symlink?
@@ -97,7 +97,7 @@ clear_test_workspace
 create_test_workspace
 
 touch $TARGETHOMEDIR/.zshrc
-symlink_to_repo .zshrc 
+symlink_to_repo .zshrc > /dev/null 2>&1 
 assertFile "Making symlink to .zshrc when a file already exists creates a backup" $TARGETHOMEDIR/.zshrc.bak
 
 # TODO: define the next test
