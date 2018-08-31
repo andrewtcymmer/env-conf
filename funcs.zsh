@@ -39,3 +39,12 @@ function add_github_to_ssh_config {
 		echo "\tIdentityFile ~/update/this/yourself" >> $sshcfg
 	fi
 }
+
+function add_vimplug {
+	local vimplug_file=~/.config/nvim/autoload/plug.vim
+	if [ ! -f $vimplug_file ]
+	then
+		echo Adding vim-plug file from source repository...
+		curl -fLo $vimplug_file --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	fi
+}

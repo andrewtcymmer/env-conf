@@ -22,4 +22,6 @@ done
 
 add_github_to_ssh_config
 
+add_vimplug
+
 echo "All files up-to-date."
