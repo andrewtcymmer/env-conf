@@ -5,6 +5,7 @@ call plug#begin('~/.config/nvim/vim-plugs')
   Plug 'morhetz/gruvbox'
   " utilities
   Plug 'vim-airline/vim-airline'
+  Plug 'scrooloose/nerdtree'
 call plug#end()
 
 " gruvbox-specific settings
@@ -40,3 +41,5 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
+" key mappings
+map <F4> :NERDTreeToggle<CR>
