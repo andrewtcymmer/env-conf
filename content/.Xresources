@@ -25,5 +25,7 @@ URxvt*color13: #FF00FF
 URxvt*color14: #00FFFF
 URxvt*color15: #FFFFFF
 
-URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=15:antialias=true
-URxvt*boldfont: xft:Bitstream Vera Sans Mono:bold:pixelsize=15:antialias=true
+! URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=15:antialias=true
+! URxvt*boldfont: xft:Bitstream Vera Sans Mono:bold:pixelsize=15:antialias=true
+URxvt*font: xft:Source Code Pro for Powerline:regular:size=13:antialias=true
+URxvt*boldfont: xft:Source Code Pro for Powerline:bold:size=13:antialias=true

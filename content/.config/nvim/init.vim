@@ -10,6 +10,7 @@ let g:gruvbox_contrast_dark='hard'   " options are hard, medium, soft
 filetype on
 filetype plugin on
 filetype plugin indent on
+set encoding=utf-8
 set fileencoding=utf-8
 
 " visuals 
