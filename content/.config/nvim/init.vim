@@ -1,3 +1,5 @@
+set nocompatible
+
 call plug#begin('~/.config/nvim/vim-plugs')
   " Color scheme
   Plug 'morhetz/gruvbox'
@@ -29,9 +31,12 @@ colorscheme gruvbox
 set background=dark
 set number
 set nowrap
+set colorcolumn=120
 
 " tab trickery
+set autoindent
 set expandtab
 set tabstop=2
+set softtabstop=2
 set shiftwidth=2
 
