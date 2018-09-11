@@ -29,4 +29,4 @@ On Debian, I did not get immediate results by installing the `fonts-powerline` p
  - Edit the `.xinitrc` to add a line to look in the `~/.local/share/fonts` folder
  - Update `.Xresources` `URxvt*regularFont` with a powerline font
  - Log out and back in (on i3, cmd+shift+e)
-
+ - On mac, set the font in Terminal.app [see here](https://github.com/powerline/fonts/issues/185)

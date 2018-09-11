@@ -30,7 +30,7 @@ set fileencoding=utf-8
 syntax on
 colorscheme gruvbox
 set background=dark
-set number
+set relativenumber
 set nowrap
 set colorcolumn=120
 
