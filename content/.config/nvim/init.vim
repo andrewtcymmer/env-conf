@@ -6,6 +6,9 @@ call plug#begin('~/.config/nvim/vim-plugs')
   " utilities
   Plug 'vim-airline/vim-airline'
   Plug 'scrooloose/nerdtree'
+  " Javascript plugins
+  Plug 'pangloss/vim-javascript'
+  Plug 'mxw/vim-jsx'
 call plug#end()
 
 " gruvbox-specific settings
