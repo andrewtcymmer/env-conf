@@ -5,7 +5,6 @@ call plug#begin('~/.config/nvim/vim-plugs')
   Plug 'morhetz/gruvbox'
   " utilities
   Plug 'vim-airline/vim-airline'
-  Plug 'scrooloose/nerdtree'
   " Javascript plugins
   Plug 'pangloss/vim-javascript'
   Plug 'mxw/vim-jsx'
