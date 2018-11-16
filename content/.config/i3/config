@@ -114,8 +114,9 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
-# start dmenu when pressing win+p
-bindsym $mod+m exec "rofi -combi-modi window,drun -show combi" 
+# Brings up the run program command. Add alt to show the combination of modes.
+bindsym $mod+m exec "rofi -show run"
+bindsym $mod+Shift+m exec "rofi -show combi -combi-modi 'window,run,ssh' -modi combi"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
