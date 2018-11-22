@@ -3,23 +3,32 @@
  * Rofi version: 1.5.1
  **/
 * {
-    selected-normal-foreground:  @lightbg;
+    /* *** custom colors (cc) aid in showing where colors have been customized. */
+    cc-shadow-black: #252a33;
+    cc-dark-gray: #2f343f;
+    cc-mid-gray: #383c4a; 
+    cc-light-gray: #404552;
+    cc-verylight-gray: #505360;
+    cc-highlight-white: #d3dae3;
+    cc-highlight-sunken: #6c727d;
+    red:                         rgba ( 220, 50, 47, 100 % );
+    blue:                        rgba ( 38, 139, 210, 100 % );
+    lightbg:                     rgba ( 238, 232, 213, 100 % );
+    lightfg:                     rgba ( 88, 104, 117, 100 % );
+    /* *** end custom colors *** */
+    background:                  rgba ( 253, 246, 227, 100 % );
     foreground:                  rgba ( 0, 43, 54, 100 % );
+    selected-normal-foreground:  @lightbg;
     normal-foreground:           @foreground;
     alternate-normal-background: @lightbg;
-    red:                         rgba ( 220, 50, 47, 100 % );
     selected-urgent-foreground:  @background;
-    blue:                        rgba ( 38, 139, 210, 100 % );
     urgent-foreground:           @red;
     alternate-urgent-background: @lightbg;
     active-foreground:           @blue;
-    lightbg:                     rgba ( 238, 232, 213, 100 % );
     selected-active-foreground:  @background;
     alternate-active-background: @lightbg;
-    background:                  rgba ( 253, 246, 227, 100 % );
     alternate-normal-foreground: @foreground;
     normal-background:           @background;
-    lightfg:                     rgba ( 88, 104, 117, 100 % );
     selected-normal-background:  @lightfg;
     border-color:                @foreground;
     spacing:                     2;
@@ -33,7 +42,11 @@
     selected-active-background:  @blue;
 }
 window {
-    background-color: @background;
+    /* 
+      font:  transparency:  location: (north center south west etc) 
+      anchor:  fullscreen:  width:  x-offset:  y-offset:
+    */
+    background-color: @cc-dark-gray;
     border:           1;
     padding:          5;
 }
