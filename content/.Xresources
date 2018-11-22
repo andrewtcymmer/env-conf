@@ -7,7 +7,7 @@ URxvt*foreground: White
 URxvt*depth: 32
 URxvt*background: rgba:0000/0000/0200/c800
 ! darker colors first 
-URxvt*color0: #000000  
+URxvt*color0: #000000
 URxvt*color1: #B40000
 URxvt*color2: #00AA00
 URxvt*color3: #AAAA00
