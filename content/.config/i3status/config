@@ -7,8 +7,11 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-        colors = true
-        interval = 5
+  colors = true
+  color_good = '#3c7e3c'
+  color_degraded = '#786e1c'
+  color_bad = '#8c4325'
+  interval = 5
 }
 
 order += "disk /"
