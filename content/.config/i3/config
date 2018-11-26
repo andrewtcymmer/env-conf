@@ -7,6 +7,7 @@ new_window pixel
 exec --no-startup-id compton --opacity-rule '100:window_type = "dock" && class_g = "i3bar"' --config ~/.config/compton/compton.conf -b
 exec --no-startup-id /usr/bin/feh --bg-scale ~/galaxy.jpg
 
+# Windows key
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -163,3 +164,4 @@ bar {
     urgent_workspace    #d3dae3    #6c727d    #d3dae3
   }
 }
+
