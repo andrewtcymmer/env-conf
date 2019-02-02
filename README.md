@@ -30,3 +30,15 @@ On Debian, I did not get immediate results by installing the `fonts-powerline` p
  - Update `.Xresources` `URxvt*regularFont` with a powerline font
  - Log out and back in (on i3, cmd+shift+e)
  - On mac, set the font in Terminal.app [see here](https://github.com/powerline/fonts/issues/185)
+
+## RVM (Ruby Version Manager)
+Get the GPG keys, then install via curl. See the general instructions at `https://rvm.io/rvm/install`. To obtain the keys from behind a firewall, specify port `80` as noted in the command below:  
+
+    gpg --keyserver hkp://keys.gnupg.net:80 --recv-keys <paste keys>
+
+Beware that RVM will blindly create dotfiles for bash and zsh. The zsh dotfiles in this repo already have the necessary changes made to them.  
+
+## NVM (NodeJS Version Manager)
+Get and run the installer script to install the `.nvm` directory to your home.  
+The script will complain that it could not find a shell profile to add the `$NVM_HOME` dir to. Ignore this since it is already added to the .zshrc in this repo.
+
