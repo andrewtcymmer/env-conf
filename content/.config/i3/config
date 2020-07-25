@@ -4,7 +4,8 @@
 
 new_window pixel
 
-exec --no-startup-id compton --opacity-rule '100:window_type = "dock" && class_g = "i3bar"' --config ~/.config/compton/compton.conf -b
+exec --no-startup-id picom --config ~/.config/picom/picom.conf -CGb
+# exec --no-startup-id compton --opacity-rule '100:window_type = "dock" && class_g = "i3bar"' --config ~/.config/compton/compton.conf -b
 exec --no-startup-id /usr/bin/feh --bg-scale ~/galaxy.jpg
 
 # Windows key
