@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+percent=`cat /proc/net/wireless | tail -n 1 | awk '{print int($3 * 100 / 70)}'`
+echo "WiFi $percent%"
+echo "WiFi $percent%"
+if [ "$percent" -ge 85 ] ; then
+  echo "#009900"
+elif [ "$percent" -ge 50 ] ; then
+  echo "#888800"
+else 
+  echo "#990000"
+fi

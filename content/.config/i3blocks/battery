@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+cur_en=$(cat /sys/class/power_supply/BAT0/energy_now)
+max_en=$(cat /sys/class/power_supply/BAT0/energy_full_design)
+chr=$(cat /sys/class/power_supply/BAT0/status)
+let "pct = $cur_en * 100 / $max_en"
+echo "$chr, $pct%"
+echo "$chr, $pct%"
+if [ "$pct" -ge 70 ] ; then
+  echo "#009900"
+elif [ "$pct" -ge 20 ] ; then
+  echo "#888800"
+else
+  echo "#990000"
+fi

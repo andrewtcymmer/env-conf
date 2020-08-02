@@ -1,0 +1,17 @@
+command=~/.config/i3blocks/$BLOCK_NAME
+
+[battery]
+interval=7200
+
+[disk]
+command=df -h | grep sda4 | awk '{print $4}'
+interval=7200
+# every two minutes
+
+[wifi]
+interval=5
+
+[time]
+command=date "+%a %b %d,%l:%M %P "
+interval=15
+
