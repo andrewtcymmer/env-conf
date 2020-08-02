@@ -8,10 +8,13 @@ call plug#begin('~/.config/nvim/vim-plugs')
   " Javascript plugins
   Plug 'pangloss/vim-javascript'
   Plug 'mxw/vim-jsx'
+  Plug 'mustache/vim-mustache-handlebars'
+  " Ruby plugins
+  " Plug 'vim-ruby/vim-ruby'
+  " Elixir plugins
+  " Plug 'elixir-editors/vim-elixir'
+  " Plug 'slashmili/alchemist.vim'
 call plug#end()
-
-" gruvbox-specific settings
-let g:gruvbox_contrast_dark='hard'   " options are hard, medium, soft
 
 " vim-airline specific settings
 let g:airline#extensions#tabline#enabled = 1
@@ -28,9 +31,13 @@ filetype plugin indent on
 set encoding=utf-8
 set fileencoding=utf-8
 
-" visuals 
+"This if-block is useful on my Mac, but looks bad with Arch+urxvt+i3wm
+" if (has('termguicolors'))
+"   set termguicolors
+" endif
 syntax on
 colorscheme gruvbox
+let g:gruvbox_contrast_dark='medium'   " options are hard, medium, soft
 set background=dark
 set relativenumber
 set nowrap
