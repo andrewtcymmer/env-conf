@@ -9,11 +9,9 @@ call plug#begin('~/.config/nvim/vim-plugs')
   Plug 'pangloss/vim-javascript'
   Plug 'mxw/vim-jsx'
   Plug 'mustache/vim-mustache-handlebars'
-  " Ruby plugins
-  " Plug 'vim-ruby/vim-ruby'
-  " Elixir plugins
-  " Plug 'elixir-editors/vim-elixir'
-  " Plug 'slashmili/alchemist.vim'
+  " Rust
+  Plug 'rust-lang/rust.vim'
+  Plug 'racer-rust/vim-racer'
 call plug#end()
 
 " vim-airline specific settings
@@ -50,5 +48,14 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
-" key mappings
-map <F4> :NERDTreeToggle<CR>
+" Racer (rust)
+augroup Racer
+  autocmd!
+  autocmd FileType rust nmap <buffer> gd          <Plug>(rust-def)
+  autocmd FileType rust nmap <buffer> gs          <Plug>(rust-def-split)
+  autocmd FileType rust nmap <buffer> gx          <Plug>(rust-def-vertical)
+  autocmd FileType rust nmap <buffer> gt          <Plug>(rust-def-tab)
+  autocmd FileType rust nmap <buffer> <leader> gd <Plug>(rust-doc)
+  autocmd FileType rust nmap <buffer> <leader> gD <Plug>(rust-doc-tab)
+augroup END
+
